@@ -12,7 +12,7 @@ class TaskFormController {
 
     @GetMapping("/appointment")
     public String taskForm(Model model) {
-        model.addAttribute("createTaskPage", new Task());
+        model.addAttribute("appointment", new Task());
         return "createTaskPage";
     }
 }

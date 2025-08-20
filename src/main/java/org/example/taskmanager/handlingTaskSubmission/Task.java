@@ -3,7 +3,8 @@ package org.example.taskmanager.handlingTaskSubmission;
 public class Task {
 
     private int id;
-    private String content;
+    private String firstName;
+    private String lastName;
 
     public int getId() {
         return id;
@@ -13,11 +14,19 @@ public class Task {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

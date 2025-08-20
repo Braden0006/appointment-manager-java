@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Create Appointment</title>
 </head>
 <body>
     <h1>Create Appointment</h1>
-    <form>
-        <input type="text" name="firstName" placeholder="First Name" required>
-        <input type="text" name="lastName" placeholder="Last Name" required>
+    <form action="#" th:action="@{/appointment}" th:object="${appointment}" method="post">
+        <input type="text" name="firstName" placeholder="First Name" th:field="*{firstName}" required>
+        <input type="text" name="lastName" placeholder="Last Name" th:field="*{lastName}" required>
         <input type="datetime-local" required>
         <input type="submit" value="Submit">
     </form>
