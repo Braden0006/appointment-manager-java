@@ -6,11 +6,9 @@
     </head>
 
     <body>
-        <h2>Here is your list of tasks:</h2>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <h1>Here is your list of tasks:</h1>
+
+        <p th:text="'First Name: ' + ${appointment.firstName}"></p>
+        <p th:text="'Last Name: ' + ${appointment.lastName}"></p>
     </body>
 </html>
