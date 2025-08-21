@@ -17,7 +17,6 @@ public class TaskManagerApplication {
     }
 
     @GetMapping("/")
-
     public String displayTasks() {
         return "homePage";
     }

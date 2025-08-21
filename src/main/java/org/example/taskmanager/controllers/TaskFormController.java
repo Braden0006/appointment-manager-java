@@ -17,6 +17,6 @@ class TaskFormController {
     @PostMapping("/appointment")
     public String taskSubmit(@ModelAttribute Task appointment, Model model) {
        model.addAttribute("appointment", appointment);
-       return "/homePage";
+       return "appointmentResult";
     }
 }
