@@ -1,4 +1,4 @@
-package org.example.taskmanager.controllers;
+package org.example.appointmentmanager.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

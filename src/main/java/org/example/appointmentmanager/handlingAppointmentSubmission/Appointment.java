@@ -1,6 +1,6 @@
-package org.example.taskmanager.handlingTaskSubmission;
+package org.example.appointmentmanager.handlingAppointmentSubmission;
 
-public class Task {
+public class Appointment {
 
     private int id;
     private String firstName;
