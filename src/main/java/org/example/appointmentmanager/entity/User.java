@@ -1,7 +1,12 @@
 package org.example.appointmentmanager.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "User")
+
 public class User {
-    private Long id;
+    @Id private Long id;
     private String fName;
     private String lName;
     private String email;
