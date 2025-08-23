@@ -16,4 +16,16 @@ class UserService {
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
+
+    public User getUserbyId(String Id) {
+        return userRepository.findById(Id).orElse(null);
+    }
+
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
+
+    public void deleteUser(String Id) {
+        userRepository.deleteById(Id);
+    }
 }
