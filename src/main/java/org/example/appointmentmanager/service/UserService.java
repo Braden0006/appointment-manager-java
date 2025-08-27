@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-class UserService {
+public class UserService {
 
     @Autowired
     private UserRepository userRepository;
@@ -17,7 +17,7 @@ class UserService {
         return userRepository.findAll();
     }
 
-    public User getUserbyId(String Id) {
+    public User getUserById(String Id) {
         return userRepository.findById(Id).orElse(null);
     }
 
